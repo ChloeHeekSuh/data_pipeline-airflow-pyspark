@@ -9,7 +9,7 @@ This project is a batch process data pipeline utilized with the PySpark
 ## Introduction
 This project is a batch process data pipeline utilized with the PySpark artifact above. As soon as data lands on the AWS S3 bucket, that triggers airflow and causes the PySpark downstream operation which converts the CSV file on the S3 bucket into a parquet file. After that, the parquet is used in AWS Athena as a data set. Finally, Superset can visualize the data using the data set.
 
-![DIAGRAM](https://github.com/ChloeHeekSuh/data_pipeline-airflow-pyspark/blob/master/de_midterm_diagram.png?raw=true)
+![DIAGRAM]()
 	
 ## Technologies
 Project is created with:
