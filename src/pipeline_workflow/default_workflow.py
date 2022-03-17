@@ -5,7 +5,6 @@ import pipeline_custom
 
 class DefaultWorkflow(AbstractWorkflow):
     def __init__(self, params, spark):
-        # AbstractWorkflow class를 받아서 연장. 상속
         super().__init__(params, spark)
 
     def run(self):
@@ -22,4 +21,4 @@ class DefaultWorkflow(AbstractWorkflow):
         temp_cls, params = PipelineStepLoader.get_class(node, self.params, custom_steps=custom_steps)
         df = temp_cls.run(self.spark, params, df)
 
-        # 노드가 한번 돌아갈 때마다 dataframe이 계속 덮어씌워진다.
+        # Dataframe is constantly overwritten every time a node goes back
