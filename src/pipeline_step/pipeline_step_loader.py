@@ -13,7 +13,6 @@ def loaded(func):
         module_name, yaml_params = args
         # we can change the source folder to load the py scripts by reference the kwargs first
         # and if not available the we can default to pipeline_custom.
-        # 지금은 이걸 사용할 일 없지만, 나중에 현업에서 marketing, risk 부서 등의 데이터를 써야 할 떄 아래 예시처럼 모듈path를 바꿔줘야 한다.
         # if kwargs.contains("custom_source"):
         # prefix = kwargs["custom_source"]
         # else prefix = "pipeline_custom"
