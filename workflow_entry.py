@@ -5,7 +5,6 @@ from pipeline_utils.package import SparkParams
 
 
 # It will take care of the command line in json blob
-# dictionary 로 넣고, 저장하면 나중에 콘솔에서 키워드를 사용가능!
 parser = argparse.ArgumentParser()
 parser.add_argument("-p", "--params", required=True, help="Spark input parameter {'input_path': ...., 'name': 'demo', 'file_type': txt.....}")
 # The parse_args() method actually returns some data from the options specified like '-p', 'i', etc.
